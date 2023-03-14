@@ -136,6 +136,7 @@ module Puma
       end
     rescue => e
       @stdout.puts e.message
+      @stdout.puts e.backtrace
       exit 1
     end
 
